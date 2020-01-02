@@ -1,5 +1,3 @@
-html,
-body,
 #app {
     padding: 40px 0 50px 0;
     width: 100%;
@@ -26,23 +24,4 @@ body,
     display: flex;
     align-items: center;
     left: 15px;
-  }
-  .v-enter{
-    transform: translateX(100%);
-  }
-  .v-enter-active{
-    transition: transform 0.3s ease;
-  }
-  .v-enter-to{
-    transform: translateX(0);
-  }
-  
-  .v-leave{
-    opacity: 1;
-  }
-  .v-leave-active{
-    transition: opacity 0.3s;
-  }
-  .v-leave-to{
-    opacity: 0.4;
   }
