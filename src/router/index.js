@@ -7,6 +7,7 @@ import Search from '../components/Search'
 import News from '../components/News.vue'
 import Comments from '../components/Comments.vue'
 import Photo from '../components/Photo.vue'
+import ImageDetail from '../components/ImageDetail.vue'
 import Goods from '../components/Goods.vue'
 Vue.use(VueRouter)
 
@@ -19,6 +20,7 @@ const routes = [
   { path: '/news/list', component: News },
   { path: '/comments', component: Comments },
   { path: '/photo/list', component: Photo },
+  { path: '/imagedetail', component: ImageDetail },
   { path: '/goods/list', component: Goods }
 ]
 

@@ -1,4 +1,4 @@
-<template>
+<template>w
   <div>
     search组件
   </div>

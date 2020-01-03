@@ -1,6 +1,6 @@
 <template>
   <div>
-      newslist组件
+      新闻资讯,自己根据商品id写子路由
   </div>
 </template>
 

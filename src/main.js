@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
-import store from './store'
+import './assets/css/common.css'
+import router from './router/index'
+import store from './store/index'
 import '../plugins/vant.js'
 import axios from 'axios'
 // 自定义的封装组件
@@ -16,6 +17,7 @@ Vue.prototype.$http = axios
 Vue.config.productionTip = false
 Vue.component('mbx', mbx)
 Vue.component('tab', tab)
+
 new Vue({
   router,
   store,
