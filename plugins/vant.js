@@ -26,7 +26,8 @@ import {
   Stepper,
   SwipeCell,
   Toast,
-  Field
+  Field,
+  Overlay
 } from 'vant'
 Vue.use(Button)
 Vue.use(Swipe)
@@ -54,6 +55,7 @@ Vue.use(Stepper)
 Vue.use(SwipeCell)
 Vue.use(Toast)
 Vue.use(Field)
+Vue.use(Overlay)
 
 // 图片预览
 Vue.prototype.$imagePreview = ImagePreview

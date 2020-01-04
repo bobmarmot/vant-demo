@@ -1,6 +1,7 @@
 <template>
-  <div id="image-detail-box">
-    <van-nav-bar title="黑马程序员.vant" left-text="返回" left-arrow @click-left="onClickLeft()" fixed> </van-nav-bar><br>
+  <div>
+    <!-- 导入头部组件 -->
+    <mbx nav1="返回" nav2="黑马程序员.vant"></mbx>
     <!-- 标题文章盒子 -->
     <div id="article-box">
       <div id="title">
@@ -11,8 +12,8 @@
           {{ imgDetailInfo.add_time }}
         </span>
         <span id="clickNum"> 点击 : {{ imgDetailInfo.click }} </span>
-        <hr>
       </div>
+      <hr />
       <!-- 图片展示区 -->
       <van-grid :border="false" :column-num="3" square>
         <van-grid-item v-for="(item, index) in imgDetailList" :key="index" @click="previewImage(index)">
@@ -22,6 +23,7 @@
       <div id="content" v-html="imgDetailInfo.content"></div>
     </div>
     <Comments />
+    <!-- 导入底部组件 -->
     <tab n1="首页" n2="会员" n3="购物车" n4="搜索"></tab>
   </div>
 </template>
@@ -68,14 +70,20 @@ export default {
 </script>
 
 <style lang="less">
-#image-detail-box {
-  .van-grid-item__content {
-    padding: 0;
-    .van-image {
-      height: 88%;
-      width: 88%;
-    }
-  }
+#article-info {
+  font-size: 10px;
+  color: #8f8f94;
+  padding: 0 10px 10px 10px;
+}
+#title {
+  font-weight: bold;
+  padding: 20px;
+  color: #4da2f8;
+  font-size: 15px;
+  text-align: center;
+}
+#clickNum {
+  float: right;
 }
 .van-image-preview__image {
   margin: auto;
